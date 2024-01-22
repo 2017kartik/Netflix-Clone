@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assests/images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 750px;
+    position: relative;
+}
+
+.main .box {
+    height: 200vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.902);
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 8px;
+    background-color: rgb(45, 41, 41);
+}
+
+div .red {
+    display: flex ;
+}
+
+.btn1 {
+    display: grid;
+    grid-template-columns: 17px 74px 7px;
+}
+
+.btn {
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgb(255 255 255 / 30%);
+    border-radius: 5px;
+    font-weight: 300;
+    margin-right: 25px;
+    font-size: 1rem;
+    padding: 7px 12px 7px 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-red {
+    display: flex;
+    align-items: center;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    padding: 8px 20px 8px 20px;
+}
+
+.btn-red-sm {
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 16px 160px 16px 15px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    background-color: rgba(23, 23, 23, 0.55);
+    border: 1px solid rgb(255 255 255 / 30%);
+    color: rgb(255, 255, 255);
+}
+
+.first {
+    display: flex;
+    height: 575px;
+    justify-content: center;
+    max-width: 76vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+@media screen and (max-width: 1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 665.2px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 108px;
+    right: 95px;
+}
+
+section.first>div :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+section.first>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 65px 56px 30px 56px;
+}
+
+.faqbox {
+    max-width: 72vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: rgb(45, 45, 45);
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: rgba(65, 65, 65, 1);
+}
+
+.last-box {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;    
+    align-items: center;
+}
+
+footer {
+    height: 300px;
+    color: rgb(255, 255, 255, 0.7);
+    max-width: 90vw;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 4.5rem 12rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+    font-size: 16px;
+    row-gap: 150px;
+}
+
+@media screen and (max-width: 1300px){
+    .footer {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        font-size: 16px;
+        row-gap: 150px;
+    }
+}
+
+footer .question {
+    margin-bottom: 23px;
+}
+
+.footer a {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+
+.footer-item {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+}
+
+.last {
+    padding: 24px 0px 24px 0px;
+}
+
